@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Workspace page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- header start -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="landingpage.html">Home Page</a></li>
+        <!-- <li><a href="searchpage.html">Search</a></li> -->
+        <li><a href="workspacepage.html">Property & Workspace</a></li>
+        <div class="myprofile">
+          <li id="myprofile"><a href="myprofile.html">My Profile</a></li>
+        </div>
+        <div class="login">
+          <li><a href="#" id="logout">Log Out</a></li> <!-- Add logout link -->
+        </div>
+      </ul>
+    </nav>
+  </header>
+  <!-- header end -->
+
+  <!-- body start -->
+  <div class="body">
+    <p>Please add your workspace:</p>
+    <br>
+    <table>
+      <tr>
+        <td><label for="address">Address:</label></td>
+        <td><input type="text" id="address" name="address" required></td>
+      </tr>
+
+      <tr>
+        <td><label for="city">City:</label></td>
+        <td><input type="text" id="city" name="city" required></td>
+      </tr>
+      <tr>
+        <td><label for="state">State:</label></td>
+        <td><input type="text" id="state" name="state" required></td>
+      </tr>
+      <tr>
+        <td><label for="country">Country:</label></td>
+        <td><input type="text" id="country" name="country" required></td>
+      </tr>
+      <tr>
+        <td><label for="neighborhood">Neighborhood:</label></td>
+        <td><input type="text" id="neighborhood" name="neighborhood" required></td>
+      </tr>
+      <tr>
+        <td><label for="squareFeet">Square Feet:</label></td>
+        <td><input type="text" id="squareFeet" name="squareFeet" required></td>
+      </tr>
+      <tr>
+        <td><label for="amenity">Amenity:</label></td>
+        <td><input type="text" id="amenity" name="amenity" required></td>
+      </tr>
+      <tr>
+        <td><label for="parkingGarage">Parking Garage:</label></td>
+        <td>
+          <select id="parkingGarage">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="publicTransportation">Public Transportation:</label></td>
+        <td>
+          <select id="publicTransportation">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="workspaceType">Workspace Type:</label></td>
+        <td>
+          <select id="workspaceType">
+            <option value="meetingRooms">Meeting Rooms</option>
+            <option value="privateOfficeRooms">Private Office Rooms</option>
+            <option value="desks">Desks</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="seatingCapacity">Seating Capacity:</label></td>
+        <td><input type="number" id="seatingCapacity" name="seatingCapacity" required></td>
+      </tr>
+      <tr>
+        <td><label for="smokingAllowed">Smoking Allowed:</label></td>
+        <td>
+          <select id="smokingAllowed">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="price">Price:</label></td>
+        <td><input type="number" id="price" name="price" required></td>
+      </tr>
+      <tr>
+        <td><label for="upload">Please upload a photo:</label></td>
+        <td><input type="file" id="photoInput"></td>
+      </tr>
+    </table>
+    <br>
+    <p id="addworkspace"></p>
+    <br>
+    <button id="addButton">Add</button>
+    <br>
+
+  </div>
+  <!-- body end -->
+
+
+  <!-- footer start -->
+  <footer>
+    <ul>
+      <li class="facebook"> <a href="https://www.facebook.com/"></a></li>
+      <li class="instagram"><a href="https://www.instagram.com/"></a></li>
+      <li class="youtube"><a href="https://www.youtube.com/"></a></li>
+    </ul>
+    <p>©Copyright</p>
+  </footer>
+
+  <script src="workspace.js"> </script>
+
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Profile Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- header start -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="landingpage.html">Home Page</a></li>
+        <!-- <li><a href="searchpage.html">Search</a></li> -->
+        <li><a href="workspacepage.html">Property & Workspace</a></li>
+        <div class="login">
+          <li><a href="#" id="logout">Log Out</a></li> <!-- Add logout link -->
+        </div>
+      </ul>
+    </nav>
+  </header>
+  <!-- header end -->
+
+  <!-- body start -->
+  <div class="body">
+    <h2>My Workspace Listing:</h2>
+    <!-- Add sorting buttons -->
+    <div>
+      <button onclick="sortByCity()">Sort by City</button>
+      <button onclick="sortByArea()">Sort by Area</button>
+      <button onclick="sortByCapacity()">Sort by Capacity</button>
+      <button onclick="sortByPrice()">Sort by Price</button>
+    </div>
+    <ul id="workspaceList"></ul>
+  </div>
+  <!-- body end -->
+
+  <!-- footer start -->
+  <footer>
+    <ul>
+      <li class="facebook"> <a href="https://www.facebook.com/"></a></li>
+      <li class="instagram"><a href="https://www.instagram.com/"></a></li>
+      <li class="youtube"><a href="https://www.youtube.com/"></a></li>
+    </ul>
+    <p>©Copyright</p>
+  </footer>
+  <!-- footer end -->
+
+  <script src="myprofile.js"></script>
+</body>
+
+</html>

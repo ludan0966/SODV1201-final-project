@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- header start -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="landingpage.html">Home Page</a></li>
+        <li><a href="searchpage.html">Search</a></li>
+        <!-- <li><a href="workspacepage.html">Property & Workspace</a></li> -->
+        <div class="login">
+          <li><a href="#" id="logout">Log Out</a></li> <!-- Add logout link -->
+        </div>
+      </ul>
+    </nav>
+  </header>
+  <!-- header end -->
+
+  <!-- body start -->
+  <div class="body">
+    <p>Look for the workspace that you are interested in:</p>
+    <br>
+    <select name="" id="search">
+      <option value="city">City</option>
+      <option value="state">State</option>
+      <option value="country">Country</option>
+      <option value="neighborhood">Neighborhood</option>
+      <option value="amenity">Amenity</option>
+      <option value="squareFeet">Square Feet</option>
+      <option value="parkingGarage">Parking Garage</option>
+      <option value="publicTransportation">Public Transportation</option>
+      <option value="workspaceType">Workspace Type</option>
+      <option value="seatingCapacity">Seating Capacity</option>
+      <option value="smokingAllowed">Smoking Allowed</option>
+      <option value="price">Price</option>
+    </select>
+    <input type="text" id="textInput" style="display: inline-block;"> <!-- Text input -->
+    <div id="radioInput" style="display: none;"> <!-- Radio input -->
+      <label><input type="radio" name="radioOption" value="yes"> Yes</label>
+      <label><input type="radio" name="radioOption" value="no"> No</label>
+    </div>
+    <div id="workspaceTypeOptions" style="display: none;"> <!-- Workspace Type options -->
+      <label><input type="radio" name="workspaceTypeOption" value="meetingRooms"> Meeting Rooms</label>
+      <label><input type="radio" name="workspaceTypeOption" value="privateOfficeRooms"> Private Office Rooms</label>
+      <label><input type="radio" name="workspaceTypeOption" value="desks"> Desks</label>
+    </div>
+    <button id="searchButton">Search</button>
+    <div id="sortButtons">
+      <button id="sortByCityBtn">Sort by City</button>
+      <button id="sortByAreaBtn">Sort by Area</button>
+      <button id="sortByCapacityBtn">Sort by Capacity</button>
+      <button id="sortByPriceBtn">Sort by Price</button>
+    </div>
+    <hr> <!-- Horizontal line -->
+    <div id="displayContainer"></div>
+  </div>
+  <!-- body end -->
+
+  <!-- footer start -->
+  <footer>
+    <ul>
+      <li class="facebook"> <a href="https://www.facebook.com/"></a></li>
+      <li class="instagram"><a href="https://www.instagram.com/"></a></li>
+      <li class="youtube"><a href="https://www.youtube.com/"></a></li>
+    </ul>
+    <p>©Copyright</p>
+  </footer>
+  <!-- footer end -->
+
+  <script src="search.js"></script>
+</body>
+
+</html>
