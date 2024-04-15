@@ -1,12 +1,12 @@
 
 // Function for landing
 const sliderData = [
-  { url: 'coworkingdesk-1.jpg' },
-  { url: 'coworkingdesk-2.jpg' },
-  { url: 'meetingroom-1.jpg' },
-  { url: 'meetingroom-2.jpg' },
-  { url: 'privateoffice-1.jpg' },
-  { url: 'privateoffice-2.jpg' }
+  { url: 'workspacephoto/coworkingdesk-1.jpg' },
+  { url: 'workspacephoto/coworkingdesk-2.jpg' },
+  { url: 'workspacephoto/meetingroom-1.jpg' },
+  { url: 'workspacephoto/meetingroom-2.jpg' },
+  { url: 'workspacephoto/privateoffice-1.jpg' },
+  { url: 'workspacephoto/privateoffice-2.jpg' }
 ];
 
 const slider = document.getElementById('slider');
