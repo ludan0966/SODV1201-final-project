@@ -131,7 +131,7 @@ function displayMatchedInfos(matchedInfos) {
     textDiv.classList.add('text-info');
 
     for (const key in info) {
-      if (key !== 'photo') {
+      if (key !== 'photo' && key !== 'creatorEmail') {
         const p = document.createElement('p');
         const value = typeof info[key] === 'boolean' ? (info[key] ? 'Yes' : 'No') : info[key];
         p.textContent = `${key.charAt(0).toUpperCase() + key.slice(1)}: ${value}`;
@@ -139,7 +139,7 @@ function displayMatchedInfos(matchedInfos) {
       }
     }
 
-    // 创建包含照片的<div>元素，并添加类名
+
     if (info.photo) {
       const imgDiv = document.createElement('div');
       imgDiv.classList.add('photo-info');
@@ -162,6 +162,7 @@ function displayMatchedInfos(matchedInfos) {
     contactBtn.classList.add('contact-btn');
     contactDiv.appendChild(contactBtn);
     li.appendChild(contactDiv);
+
     contactBtn.addEventListener('click', function () {
       const userInfo = JSON.parse(localStorage.getItem('userInfo'));
       if (userInfo) {
@@ -180,6 +181,7 @@ function displayMatchedInfos(matchedInfos) {
 
   displayContainer.appendChild(ul);
 }
+
 
 // Render information when the page is first loaded
 displayMatchedInfos(workspaceInfos);
